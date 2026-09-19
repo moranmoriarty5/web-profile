@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Budi Santoso – Profil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sora:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="progres" aria-hidden="true"></div>
+
+    <header>
+      <div class="wrap bar">
+        <a class="logo" href="#atas">Budi Santoso</a>
+        <nav id="menu" aria-label="Menu utama">
+          <a href="#tentang">Tentang</a>
+          <a href="#keahlian">Keahlian</a>
+          <a href="#proyek">Proyek</a>
+          <a href="#kontak">Kontak</a>
+        </nav>
+        <div class="aksi">
+          <button id="tema" type="button" aria-label="Ganti tema">Gelap</button>
+          <button
+            id="buka-menu"
+            type="button"
+            aria-label="Buka menu"
+            aria-expanded="false"
+          >
+            Menu
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="atas">
+      <section class="hero" id="hero">
+        <div class="wrap hero-isi">
+          <div>
+            <h1>Halo, saya Budi Santoso.</h1>
+            <p class="peran">
+              Saya seorang <span id="ketik"></span
+              ><span class="kursor" aria-hidden="true"></span>
+            </p>
+            <p class="intro">
+              Membuat situs yang cepat, rapi, dan menyenangkan dipakai, dari
+              Yogyakarta.
+            </p>
+            <a class="btn" href="#proyek">Lihat proyek</a>
+            <a class="btn alt" href="#kontak">Hubungi saya</a>
+          </div>
+          <div class="avatar-kotak">
+            <div class="avatar" id="avatar" aria-hidden="true">BS</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="tentang">
+        <div class="wrap">
+          <h2>Tentang saya</h2>
+          <p class="lebar">
+            Saya lulusan Teknik Informatika yang membangun situs untuk usaha
+            kecil dan komunitas. Saya suka mengubah ide sederhana menjadi
+            halaman yang berfungsi baik di ponsel maupun komputer.
+          </p>
+          <div class="angka">
+            <div>
+              <strong data-target="3">0</strong><span>tahun pengalaman</span>
+            </div>
+            <div>
+              <strong data-target="24">0</strong><span>proyek selesai</span>
+            </div>
+            <div>
+              <strong data-target="12">0</strong><span>klien puas</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="keahlian">
+        <div class="wrap">
+          <h2>Keahlian</h2>
+          <div class="skill">
+            <div class="baris"><span>HTML &amp; CSS</span><span>90%</span></div>
+            <div class="trek"><div class="isi" data-nilai="90"></div></div>
+          </div>
+          <div class="skill">
+            <div class="baris"><span>JavaScript</span><span>80%</span></div>
+            <div class="trek"><div class="isi" data-nilai="80"></div></div>
+          </div>
+          <div class="skill">
+            <div class="baris">
+              <span>Desain responsif</span><span>85%</span>
+            </div>
+            <div class="trek"><div class="isi" data-nilai="85"></div></div>
+          </div>
+          <div class="skill">
+            <div class="baris"><span>Git</span><span>70%</span></div>
+            <div class="trek"><div class="isi" data-nilai="70"></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="proyek">
+        <div class="wrap">
+          <h2>Proyek</h2>
+          <div class="filter" role="group" aria-label="Filter proyek">
+            <button class="aktif" data-filter="semua" type="button">
+              Semua
+            </button>
+            <button data-filter="situs" type="button">Situs</button>
+            <button data-filter="aplikasi" type="button">Aplikasi</button>
+          </div>
+          <div class="proyek">
+            <button
+              class="kartu"
+              data-kategori="situs"
+              data-judul="Toko Batik Online"
+              data-teknologi="HTML, CSS, JavaScript"
+              data-deskripsi="Katalog batik dengan pencarian produk, filter harga, dan keranjang belanja yang tersimpan di peramban."
+              style="--g1: #3d5afe; --g2: #8a9bff"
+              type="button"
+            >
+              <span class="thumb">TB</span>
+              <h3>Toko Batik Online</h3>
+              <p>Katalog produk dengan keranjang belanja.</p>
+            </button>
+            <button
+              class="kartu"
+              data-kategori="aplikasi"
+              data-judul="Aplikasi Catatan"
+              data-teknologi="JavaScript, localStorage"
+              data-deskripsi="Catatan harian tanpa akun. Data tersimpan di peramban dan bisa dicari berdasarkan kata kunci."
+              style="--g1: #ff4f8b; --g2: #ffa0c0"
+              type="button"
+            >
+              <span class="thumb">AC</span>
+              <h3>Aplikasi Catatan</h3>
+              <p>Catatan harian tanpa perlu akun.</p>
+            </button>
+            <button
+              class="kartu"
+              data-kategori="situs"
+              data-judul="Situs Komunitas Lari"
+              data-teknologi="HTML, CSS"
+              data-deskripsi="Halaman jadwal kegiatan dan rute latihan untuk komunitas pelari lokal, dioptimalkan untuk ponsel."
+              style="--g1: #12b886; --g2: #7be0bc"
+              type="button"
+            >
+              <span class="thumb">KL</span>
+              <h3>Situs Komunitas Lari</h3>
+              <p>Jadwal kegiatan komunitas pelari.</p>
+            </button>
+            <button
+              class="kartu"
+              data-kategori="aplikasi"
+              data-judul="Kalkulator Tabungan"
+              data-teknologi="HTML, CSS, JavaScript"
+              data-deskripsi="Menghitung target tabungan bulanan dari nominal tujuan dan jangka waktu, lengkap dengan grafik sederhana."
+              style="--g1: #f59f00; --g2: #ffd166"
+              type="button"
+            >
+              <span class="thumb">KT</span>
+              <h3>Kalkulator Tabungan</h3>
+              <p>Hitung target tabungan bulanan.</p>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontak">
+        <div class="wrap">
+          <h2>Kontak</h2>
+          <form id="form" novalidate>
+            <label
+              >Nama<input
+                id="nama"
+                name="nama"
+                autocomplete="name"
+                required /><small class="galat"></small
+            ></label>
+            <label
+              >Email<input
+                id="email"
+                name="email"
+                type="email"
+                autocomplete="email"
+                required /><small class="galat"></small
+            ></label>
+            <label
+              >Pesan<textarea
+                id="pesan"
+                name="pesan"
+                rows="4"
+                required
+              ></textarea
+              ><small class="galat"></small
+            ></label>
+            <button class="btn" type="submit">Kirim pesan</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span id="tahun"></span> Budi Santoso. Semua hak dilindungi.
+    </footer>
+
+    <dialog id="modal" aria-labelledby="m-judul">
+      <h3 id="m-judul"></h3>
+      <p id="m-teks"></p>
+      <p class="tek">Teknologi: <strong id="m-tek"></strong></p>
+      <button class="btn" id="tutup" type="button">Tutup</button>
+    </dialog>
+
+    <div id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
